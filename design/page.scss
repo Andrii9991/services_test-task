@@ -16,8 +16,16 @@
     height: auto;
     gap: 24px;
 
+    @media (max-width: 992px) {
+      grid-template-columns: repeat(auto-fill, minmax(340px, 60%));
+    }
+
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(auto-fill, minmax(410px, 95%));
+    }
+
     @media (max-width: 480px) {
-      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
     }
 
     .card-item {
@@ -85,32 +93,17 @@
         }
       }
     }
-    .plumbing {
+    .border-green {
       box-shadow: 0 0 0 2px $green-border inset;
     }
-    .painting {
+    .border-blue {
       box-shadow: 0 0 0 2px $blue-border inset;
     }
-    .furniture {
+    .border-yellow {
       box-shadow: 0 0 0 2px $yellow-border inset;
     }
-    .electrical {
+    .border-red {
       box-shadow: 0 0 0 2px $red-border inset;
-    }
-    .doors {
-      box-shadow: 0 0 0 2px $green-border inset;
-    }
-    .hanging {
-      box-shadow: 0 0 0 2px $blue-border inset;
-    }
-    .installation {
-      box-shadow: 0 0 0 2px $yellow-border inset;
-    }
-    .home {
-      box-shadow: 0 0 0 2px $red-border inset;
-    }
-    .outdoor {
-      box-shadow: 0 0 0 2px $green-border inset;
     }
   }
 }

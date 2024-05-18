@@ -45,9 +45,19 @@ a {
   height: auto;
   gap: 24px;
 }
+@media (max-width: 992px) {
+  .services__cards {
+    grid-template-columns: repeat(auto-fill, minmax(340px, 60%));
+  }
+}
+@media (max-width: 767px) {
+  .services__cards {
+    grid-template-columns: repeat(auto-fill, minmax(410px, 95%));
+  }
+}
 @media (max-width: 480px) {
   .services__cards {
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   }
 }
 .services__cards .card-item {
@@ -118,30 +128,15 @@ a {
 .services__cards .card-item .link-wrapper .link {
   text-align: right;
 }
-.services__cards .plumbing {
+.services__cards .border-green {
   box-shadow: 0 0 0 2px #179d2e inset;
 }
-.services__cards .painting {
+.services__cards .border-blue {
   box-shadow: 0 0 0 2px #0177b8 inset;
 }
-.services__cards .furniture {
+.services__cards .border-yellow {
   box-shadow: 0 0 0 2px #f5af23 inset;
 }
-.services__cards .electrical {
+.services__cards .border-red {
   box-shadow: 0 0 0 2px #f02e2c inset;
-}
-.services__cards .doors {
-  box-shadow: 0 0 0 2px #179d2e inset;
-}
-.services__cards .hanging {
-  box-shadow: 0 0 0 2px #0177b8 inset;
-}
-.services__cards .installation {
-  box-shadow: 0 0 0 2px #f5af23 inset;
-}
-.services__cards .home {
-  box-shadow: 0 0 0 2px #f02e2c inset;
-}
-.services__cards .outdoor {
-  box-shadow: 0 0 0 2px #179d2e inset;
 }/*# sourceMappingURL=page.css.map */
