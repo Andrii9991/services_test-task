@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+h1 {
+  font-size: 40px;
+  line-height: 56px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 43.2px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  color: #181833;
+}
+
+li {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  color: #2d2d2d;
+}
+
+a {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  color: #2d2d2d;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+.services__cards {
+  margin: 100px 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(424px, 1fr));
+  justify-content: center;
+  width: 1320px;
+  height: auto;
+  gap: 24px;
+}
+@media (max-width: 480px) {
+  .services__cards {
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  }
+}
+.services__cards .card-item {
+  display: grid;
+  height: 527px;
+  border-radius: 4px;
+  padding: 24px;
+}
+@media (max-width: 480px) {
+  .services__cards .card-item {
+    padding: 16px;
+  }
+}
+.services__cards .card-item__image-wrapper {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  max-height: 110px;
+}
+@media (max-width: 480px) {
+  .services__cards .card-item__image-wrapper {
+    max-height: 85px;
+  }
+}
+.services__cards .card-item__image-wrapper .image {
+  max-width: 120px;
+  max-height: 110px;
+}
+@media (max-width: 480px) {
+  .services__cards .card-item__image-wrapper .image {
+    max-width: 90px;
+  }
+}
+.services__cards .card-item__body {
+  min-height: 319px;
+  max-width: 376px;
+}
+.services__cards .card-item__body .body-title {
+  margin: 24px 0;
+}
+@media (max-width: 480px) {
+  .services__cards .card-item__body .body-title {
+    margin: 12px;
+    font-size: 32px;
+  }
+}
+.services__cards .card-item__body .body-list {
+  padding: 0 20px;
+}
+@media (max-width: 480px) {
+  .services__cards .card-item__body .body-list {
+    padding: 0 16px;
+  }
+}
+.services__cards .card-item .link-wrapper {
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+}
+.services__cards .card-item .link-wrapper .link-wrapper {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.services__cards .card-item .link-wrapper .link-wrapper .link {
+  text-align: right;
+}
+.services__cards .card-item .link-wrapper .link {
+  text-align: right;
+}
+.services__cards .plumbing {
+  box-shadow: 0 0 0 2px #179d2e inset;
+}
+.services__cards .painting {
+  box-shadow: 0 0 0 2px #0177b8 inset;
+}
+.services__cards .furniture {
+  box-shadow: 0 0 0 2px #f5af23 inset;
+}
+.services__cards .electrical {
+  box-shadow: 0 0 0 2px #f02e2c inset;
+}
+.services__cards .doors {
+  box-shadow: 0 0 0 2px #179d2e inset;
+}
+.services__cards .hanging {
+  box-shadow: 0 0 0 2px #0177b8 inset;
+}
+.services__cards .installation {
+  box-shadow: 0 0 0 2px #f5af23 inset;
+}
+.services__cards .home {
+  box-shadow: 0 0 0 2px #f02e2c inset;
+}
+.services__cards .outdoor {
+  box-shadow: 0 0 0 2px #179d2e inset;
+}/*# sourceMappingURL=page.css.map */

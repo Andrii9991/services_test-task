@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import "./color.scss";
+
+$font-family-default: "Inter", sans-serif;
+
+h1 {
+  font-size: 40px;
+  line-height: 56px;
+  font-weight: 700;
+  font-family: $font-family-default;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 43.2px;
+  font-weight: 600;
+  font-family: $font-family-default;
+  color: $bold-black;
+}
+
+li {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+  font-family: $font-family-default;
+  color: $black;
+}
+
+a {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+  font-family: $font-family-default;
+  color: $black;
+}

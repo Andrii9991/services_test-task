@@ -1,0 +1,116 @@
+@import "./color.scss";
+@import "./typography.scss";
+
+.services {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+
+  &__cards {
+    margin: 100px 16px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(424px, 1fr));
+    justify-content: center;
+    width: 1320px;
+    height: auto;
+    gap: 24px;
+
+    @media (max-width: 480px) {
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    }
+
+    .card-item {
+      display: grid;
+      height: 527px;
+      border-radius: 4px;
+      padding: 24px;
+      @media (max-width: 480px) {
+        padding: 16px;
+      }
+
+      &__image-wrapper {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        max-height: 110px;
+        @media (max-width: 480px) {
+          max-height: 85px;
+        }
+
+        .image {
+          max-width: 120px;
+          max-height: 110px;
+          @media (max-width: 480px) {
+            max-width: 90px;
+          }
+        }
+      }
+
+      &__body {
+        min-height: 319px;
+        max-width: 376px;
+
+        .body-title {
+          margin: 24px 0;
+          @media (max-width: 480px) {
+            margin: 12px;
+            font-size: 32px;
+          }
+        }
+        .body-list {
+          padding: 0 20px;
+
+          @media (max-width: 480px) {
+            padding: 0 16px;
+          }
+        }
+      }
+      .link-wrapper {
+        display: flex;
+        justify-content: right;
+        align-items: flex-end;
+        .link-wrapper {
+          display: flex;
+          justify-content: right;
+          align-items: center;
+
+          .link {
+            text-align: right;
+          }
+        }
+
+        .link {
+          text-align: right;
+        }
+      }
+    }
+    .plumbing {
+      box-shadow: 0 0 0 2px $green-border inset;
+    }
+    .painting {
+      box-shadow: 0 0 0 2px $blue-border inset;
+    }
+    .furniture {
+      box-shadow: 0 0 0 2px $yellow-border inset;
+    }
+    .electrical {
+      box-shadow: 0 0 0 2px $red-border inset;
+    }
+    .doors {
+      box-shadow: 0 0 0 2px $green-border inset;
+    }
+    .hanging {
+      box-shadow: 0 0 0 2px $blue-border inset;
+    }
+    .installation {
+      box-shadow: 0 0 0 2px $yellow-border inset;
+    }
+    .home {
+      box-shadow: 0 0 0 2px $red-border inset;
+    }
+    .outdoor {
+      box-shadow: 0 0 0 2px $green-border inset;
+    }
+  }
+}
